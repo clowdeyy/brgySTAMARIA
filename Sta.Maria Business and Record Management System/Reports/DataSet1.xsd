@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="dbstamariaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbstamariaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sta.Maria_Business_and_Record_Management_System.My.MySettings.GlobalReference.Default.dbstamariaConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="businesslist" msprop:Generator_TableClassName="businesslistDataTable" msprop:Generator_TableVarName="tablebusinesslist" msprop:Generator_TablePropName="businesslist" msprop:Generator_RowDeletingName="businesslistRowDeleting" msprop:Generator_RowChangingName="businesslistRowChanging" msprop:Generator_RowEvHandlerName="businesslistRowChangeEventHandler" msprop:Generator_RowDeletedName="businesslistRowDeleted" msprop:Generator_UserTableName="businesslist" msprop:Generator_RowChangedName="businesslistRowChanged" msprop:Generator_RowEvArgName="businesslistRowChangeEvent" msprop:Generator_RowClassName="businesslistRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="business_name" msprop:Generator_ColumnVarNameInTable="columnbusiness_name" msprop:Generator_ColumnPropNameInRow="business_name" msprop:Generator_ColumnPropNameInTable="business_nameColumn" msprop:Generator_UserColumnName="business_name" type="xs:string" minOccurs="0" />
+              <xs:element name="business_permit" msprop:Generator_ColumnVarNameInTable="columnbusiness_permit" msprop:Generator_ColumnPropNameInRow="business_permit" msprop:Generator_ColumnPropNameInTable="business_permitColumn" msprop:Generator_UserColumnName="business_permit" type="xs:string" minOccurs="0" />
+              <xs:element name="line_name" msprop:Generator_ColumnVarNameInTable="columnline_name" msprop:Generator_ColumnPropNameInRow="line_name" msprop:Generator_ColumnPropNameInTable="line_nameColumn" msprop:Generator_UserColumnName="line_name" type="xs:string" minOccurs="0" />
+              <xs:element name="street_name" msprop:Generator_ColumnVarNameInTable="columnstreet_name" msprop:Generator_ColumnPropNameInRow="street_name" msprop:Generator_ColumnPropNameInTable="street_nameColumn" msprop:Generator_UserColumnName="street_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="certificationreport" msprop:Generator_TableClassName="certificationreportDataTable" msprop:Generator_TableVarName="tablecertificationreport" msprop:Generator_RowChangedName="certificationreportRowChanged" msprop:Generator_TablePropName="certificationreport" msprop:Generator_RowDeletingName="certificationreportRowDeleting" msprop:Generator_RowChangingName="certificationreportRowChanging" msprop:Generator_RowEvHandlerName="certificationreportRowChangeEventHandler" msprop:Generator_RowDeletedName="certificationreportRowDeleted" msprop:Generator_RowClassName="certificationreportRow" msprop:Generator_UserTableName="certificationreport" msprop:Generator_RowEvArgName="certificationreportRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cr_id" msprop:Generator_ColumnVarNameInTable="columncr_id" msprop:Generator_ColumnPropNameInRow="cr_id" msprop:Generator_ColumnPropNameInTable="cr_idColumn" msprop:Generator_UserColumnName="cr_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cr_type" msprop:Generator_ColumnVarNameInTable="columncr_type" msprop:Generator_ColumnPropNameInRow="cr_type" msprop:Generator_ColumnPropNameInTable="cr_typeColumn" msprop:Generator_UserColumnName="cr_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cr_name" msprop:Generator_ColumnVarNameInTable="columncr_name" msprop:Generator_ColumnPropNameInRow="cr_name" msprop:Generator_ColumnPropNameInTable="cr_nameColumn" msprop:Generator_UserColumnName="cr_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cr_purpose" msprop:Generator_ColumnVarNameInTable="columncr_purpose" msprop:Generator_ColumnPropNameInRow="cr_purpose" msprop:Generator_ColumnPropNameInTable="cr_purposeColumn" msprop:Generator_UserColumnName="cr_purpose">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cr_total" msprop:Generator_ColumnVarNameInTable="columncr_total" msprop:Generator_ColumnPropNameInRow="cr_total" msprop:Generator_ColumnPropNameInTable="cr_totalColumn" msprop:Generator_UserColumnName="cr_total">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cr_issued" msprop:Generator_ColumnVarNameInTable="columncr_issued" msprop:Generator_ColumnPropNameInRow="cr_issued" msprop:Generator_ColumnPropNameInTable="cr_issuedColumn" msprop:Generator_UserColumnName="cr_issued">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="residencelist" msprop:Generator_TableClassName="residencelistDataTable" msprop:Generator_TableVarName="tableresidencelist" msprop:Generator_TablePropName="residencelist" msprop:Generator_RowDeletingName="residencelistRowDeleting" msprop:Generator_RowChangingName="residencelistRowChanging" msprop:Generator_RowEvHandlerName="residencelistRowChangeEventHandler" msprop:Generator_RowDeletedName="residencelistRowDeleted" msprop:Generator_UserTableName="residencelist" msprop:Generator_RowChangedName="residencelistRowChanged" msprop:Generator_RowEvArgName="residencelistRowChangeEvent" msprop:Generator_RowClassName="residencelistRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="res_name" msprop:Generator_ColumnVarNameInTable="columnres_name" msprop:Generator_ColumnPropNameInRow="res_name" msprop:Generator_ColumnPropNameInTable="res_nameColumn" msprop:Generator_UserColumnName="res_name" type="xs:string" minOccurs="0" />
+              <xs:element name="res_sex" msprop:Generator_ColumnVarNameInTable="columnres_sex" msprop:Generator_ColumnPropNameInRow="res_sex" msprop:Generator_ColumnPropNameInTable="res_sexColumn" msprop:Generator_UserColumnName="res_sex" type="xs:string" minOccurs="0" />
+              <xs:element name="res_type" msprop:Generator_ColumnVarNameInTable="columnres_type" msprop:Generator_ColumnPropNameInRow="res_type" msprop:Generator_ColumnPropNameInTable="res_typeColumn" msprop:Generator_UserColumnName="res_type" type="xs:string" minOccurs="0" />
+              <xs:element name="res_precint" msprop:Generator_ColumnVarNameInTable="columnres_precint" msprop:Generator_ColumnPropNameInRow="res_precint" msprop:Generator_ColumnPropNameInTable="res_precintColumn" msprop:Generator_UserColumnName="res_precint" type="xs:string" minOccurs="0" />
+              <xs:element name="res_status" msprop:Generator_ColumnVarNameInTable="columnres_status" msprop:Generator_ColumnPropNameInRow="res_status" msprop:Generator_ColumnPropNameInTable="res_statusColumn" msprop:Generator_UserColumnName="res_status" type="xs:string" minOccurs="0" />
+              <xs:element name="street_name" msprop:Generator_ColumnVarNameInTable="columnstreet_name" msprop:Generator_ColumnPropNameInRow="street_name" msprop:Generator_ColumnPropNameInTable="street_nameColumn" msprop:Generator_UserColumnName="street_name" type="xs:string" minOccurs="0" />
+              <xs:element name="hh_type" msprop:Generator_ColumnVarNameInTable="columnhh_type" msprop:Generator_ColumnPropNameInRow="hh_type" msprop:Generator_ColumnPropNameInTable="hh_typeColumn" msprop:Generator_UserColumnName="hh_type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="household" msprop:Generator_TableClassName="householdDataTable" msprop:Generator_TableVarName="tablehousehold" msprop:Generator_RowChangedName="householdRowChanged" msprop:Generator_TablePropName="household" msprop:Generator_RowDeletingName="householdRowDeleting" msprop:Generator_RowChangingName="householdRowChanging" msprop:Generator_RowEvHandlerName="householdRowChangeEventHandler" msprop:Generator_RowDeletedName="householdRowDeleted" msprop:Generator_RowClassName="householdRow" msprop:Generator_UserTableName="household" msprop:Generator_RowEvArgName="householdRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="res_name" msprop:Generator_ColumnVarNameInTable="columnres_name" msprop:Generator_ColumnPropNameInRow="res_name" msprop:Generator_ColumnPropNameInTable="res_nameColumn" msprop:Generator_UserColumnName="res_name" type="xs:string" minOccurs="0" />
+              <xs:element name="res_sex" msprop:Generator_ColumnVarNameInTable="columnres_sex" msprop:Generator_ColumnPropNameInRow="res_sex" msprop:Generator_ColumnPropNameInTable="res_sexColumn" msprop:Generator_UserColumnName="res_sex" type="xs:string" minOccurs="0" />
+              <xs:element name="street_name" msprop:Generator_ColumnVarNameInTable="columnstreet_name" msprop:Generator_ColumnPropNameInRow="street_name" msprop:Generator_ColumnPropNameInTable="street_nameColumn" msprop:Generator_UserColumnName="street_name" type="xs:string" minOccurs="0" />
+              <xs:element name="hh_staytype" msprop:Generator_ColumnVarNameInTable="columnhh_staytype" msprop:Generator_ColumnPropNameInRow="hh_staytype" msprop:Generator_ColumnPropNameInTable="hh_staytypeColumn" msprop:Generator_UserColumnName="hh_staytype" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="householdlist" msprop:Generator_TableClassName="householdlistDataTable" msprop:Generator_TableVarName="tablehouseholdlist" msprop:Generator_TablePropName="householdlist" msprop:Generator_RowDeletingName="householdlistRowDeleting" msprop:Generator_RowChangingName="householdlistRowChanging" msprop:Generator_RowEvHandlerName="householdlistRowChangeEventHandler" msprop:Generator_RowDeletedName="householdlistRowDeleted" msprop:Generator_UserTableName="householdlist" msprop:Generator_RowChangedName="householdlistRowChanged" msprop:Generator_RowEvArgName="householdlistRowChangeEvent" msprop:Generator_RowClassName="householdlistRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="hh_id" msdata:Caption="res_name" msprop:Generator_ColumnVarNameInTable="columnhh_id" msprop:Generator_ColumnPropNameInRow="hh_id" msprop:Generator_ColumnPropNameInTable="hh_idColumn" msprop:Generator_UserColumnName="hh_id" type="xs:string" minOccurs="0" />
+              <xs:element name="res_name" msdata:Caption="street_name" msprop:Generator_ColumnVarNameInTable="columnres_name" msprop:Generator_ColumnPropNameInRow="res_name" msprop:Generator_ColumnPropNameInTable="res_nameColumn" msprop:Generator_UserColumnName="res_name" type="xs:string" minOccurs="0" />
+              <xs:element name="res_sex" msdata:Caption="hh_staytype" msprop:Generator_ColumnVarNameInTable="columnres_sex" msprop:Generator_ColumnPropNameInRow="res_sex" msprop:Generator_ColumnPropNameInTable="res_sexColumn" msprop:Generator_UserColumnName="res_sex" type="xs:string" minOccurs="0" />
+              <xs:element name="street_name" msprop:Generator_ColumnVarNameInTable="columnstreet_name" msprop:Generator_ColumnPropNameInRow="street_name" msprop:Generator_ColumnPropNameInTable="street_nameColumn" msprop:Generator_UserColumnName="street_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:certificationreport" />
+      <xs:field xpath="mstns:cr_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

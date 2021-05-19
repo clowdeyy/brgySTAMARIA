@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sta.Maria Business and Record Management System", "Sta.Maria Business and Record Management System\Sta.Maria Business and Record Management System.vbproj", "{5BA47183-F705-4FBC-9809-CF5F449E9FC1}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sta.Maria RBRMS", "Sta.Maria RBRMS\Sta.Maria RBRMS.vdproj", "{965B1AC9-253B-4406-BEFF-A4EF935274AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BA47183-F705-4FBC-9809-CF5F449E9FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA47183-F705-4FBC-9809-CF5F449E9FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA47183-F705-4FBC-9809-CF5F449E9FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA47183-F705-4FBC-9809-CF5F449E9FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965B1AC9-253B-4406-BEFF-A4EF935274AD}.Debug|Any CPU.ActiveCfg = Release
+		{965B1AC9-253B-4406-BEFF-A4EF935274AD}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F9A74B9-64CA-403A-AB0D-621DDC8FB031}
+	EndGlobalSection
+EndGlobal

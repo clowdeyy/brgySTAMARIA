@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BA47183-F705-4FBC-9809-CF5F449E9FC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sta.Maria_Business_and_Record_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Sta.Maria_Business_and_Record_Management_System</RootNamespace>
+    <AssemblyName>Sta.Maria Business and Record Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sta.Maria Business and Record Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sta.Maria Business and Record Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\sta.maria-logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Controls.2.2.5\lib\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Imaging.2.2.5\lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging.Formats, Version=2.2.4.0, Culture=neutral, PublicKeyToken=8065ed5a639199a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Imaging.Formats.2.2.5\lib\AForge.Imaging.Formats.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\PC\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frmResidenceListV.Designer.vb">
+      <DependentUpon>frmResidenceListV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmResidenceListV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\crHouseholdList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crHouseholdList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crIGM2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crIGM2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConfirm.Designer.vb">
+      <DependentUpon>frmConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDeceased.Designer.vb">
+      <DependentUpon>frmDeceased.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDeceased.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReprint.Designer.vb">
+      <DependentUpon>frmReprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\crResidentlist.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crResidentlist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crCertilist.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crCertilist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crBusinesslist.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crBusinesslist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="modReport.vb" />
+    <Compile Include="Reports\crIGM.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crIGM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cRBClearance.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cRBClearance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crRClearance.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crRClearance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBusinessList.Designer.vb">
+      <DependentUpon>frmBusinessList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBusinessList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCapture.Designer.vb">
+      <DependentUpon>frmCapture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCapture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.designer.vb">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmResidenceList.Designer.vb">
+      <DependentUpon>frmResidenceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmResidenceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modDBConnection.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucCertAmount.Designer.vb">
+      <DependentUpon>ucCertAmount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucCertAmount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucDeceased.Designer.vb">
+      <DependentUpon>ucDeceased.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucDeceased.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucHousehold.Designer.vb">
+      <DependentUpon>ucHousehold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucHousehold.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucHR.Designer.vb">
+      <DependentUpon>ucHR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucHR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucIssuance.Designer.vb">
+      <DependentUpon>ucIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucIssuance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucListofReports.Designer.vb">
+      <DependentUpon>ucListofReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucListofReports.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucManageCT.Designer.vb">
+      <DependentUpon>ucManageCT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucManageCT.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucPay.Designer.vb">
+      <DependentUpon>ucPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucPay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucResTransaction.Designer.vb">
+      <DependentUpon>ucResTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucResTransaction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddBlacklisted.Designer.vb">
+      <DependentUpon>ucAddBlacklisted.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddBlacklisted.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddBusiness.Designer.vb">
+      <DependentUpon>ucAddBusiness.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddBusiness.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddHousehold.Designer.vb">
+      <DependentUpon>ucAddHousehold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddHousehold.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddOfficials.Designer.vb">
+      <DependentUpon>ucAddOfficials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddOfficials.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddResidence.Designer.vb">
+      <DependentUpon>ucAddResidence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddResidence.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddUsers.Designer.vb">
+      <DependentUpon>ucAddUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddUsers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddZones.Designer.vb">
+      <DependentUpon>ucAddZones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucAddZones.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucBusiness.Designer.vb">
+      <DependentUpon>ucBusiness.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucBusiness.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucDashboard.Designer.vb">
+      <DependentUpon>ucDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucHouseholdType.Designer.vb">
+      <DependentUpon>ucHouseholdType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucHouseholdType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucMaintenance.Designer.vb">
+      <DependentUpon>ucMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucMaintenance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucResidence.Designer.vb">
+      <DependentUpon>ucResidence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderDisplay\ucResidence.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucProfession.Designer.vb">
+      <DependentUpon>ucProfession.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\folderMaintenance\ucProfession.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmResidenceListV.resx">
+      <DependentUpon>frmResidenceListV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crHouseholdList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crHouseholdList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crIGM2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crIGM2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConfirm.resx">
+      <DependentUpon>frmConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDeceased.resx">
+      <DependentUpon>frmDeceased.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReprint.resx">
+      <DependentUpon>frmReprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crResidentlist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crResidentlist.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crCertilist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crCertilist.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crBusinesslist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crBusinesslist.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crIGM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crIGM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cRBClearance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cRBClearance.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crRClearance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crRClearance.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBusinessList.resx">
+      <DependentUpon>frmBusinessList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCapture.resx">
+      <DependentUpon>frmCapture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmResidenceList.resx">
+      <DependentUpon>frmResidenceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucCertAmount.resx">
+      <DependentUpon>ucCertAmount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucDeceased.resx">
+      <DependentUpon>ucDeceased.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucHousehold.resx">
+      <DependentUpon>ucHousehold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucHR.resx">
+      <DependentUpon>ucHR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucIssuance.resx">
+      <DependentUpon>ucIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucListofReports.resx">
+      <DependentUpon>ucListofReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucManageCT.resx">
+      <DependentUpon>ucManageCT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucPay.resx">
+      <DependentUpon>ucPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucResTransaction.resx">
+      <DependentUpon>ucResTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucAddBlacklisted.resx">
+      <DependentUpon>ucAddBlacklisted.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucAddBusiness.resx">
+      <DependentUpon>ucAddBusiness.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucAddHousehold.resx">
+      <DependentUpon>ucAddHousehold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucAddOfficials.resx">
+      <DependentUpon>ucAddOfficials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucAddResidence.resx">
+      <DependentUpon>ucAddResidence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucAddUsers.resx">
+      <DependentUpon>ucAddUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucAddZones.resx">
+      <DependentUpon>ucAddZones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucBusiness.resx">
+      <DependentUpon>ucBusiness.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucDashboard.resx">
+      <DependentUpon>ucDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucHouseholdType.resx">
+      <DependentUpon>ucHouseholdType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucMaintenance.resx">
+      <DependentUpon>ucMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderDisplay\ucResidence.resx">
+      <DependentUpon>ucResidence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\folderMaintenance\ucProfession.resx">
+      <DependentUpon>ucProfession.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\na.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ref.png" />
+    <None Include="Resources\refg.png" />
+    <None Include="Resources\ru.png" />
+    <None Include="Resources\rug.png" />
+    <None Include="Resources\none.png" />
+    <Content Include="Resources\sta.maria-logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
